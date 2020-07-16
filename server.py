@@ -2,7 +2,7 @@ import os,flask
 PORT=int(os.environ['PORT'])
 app = flask.Flask('app server')
 
-@app.route('/api/v1/hello')
+@app.route('/')
 def index():
   return 'Hello Dockerfile 2020/7/16'
 
